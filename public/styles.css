@@ -1,0 +1,345 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+img{
+max-width:100%;
+height:auto;
+display:block;
+}
+
+body{
+background:rgb(33,33,37);
+overflow-x:hidden;
+font-family:"Exo 2", sans-serif;
+}
+
+.banner{
+    width: 100%;
+    margin: 0 auto 30px auto;
+}
+
+.banner img{
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+    display: block;
+}
+
+
+@media (max-width:768px){
+.banner img{
+    max-height: 220px;
+}
+
+}
+
+.Cabecalho{
+background:black;
+color:white;
+padding:15px 8px;
+text-align:center;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:25px;
+}
+
+.Cabecalho h1{
+font-size:clamp(2rem,4vw,4rem);
+}
+
+.logo{
+width:500px;
+height:auto;
+display:block;
+margin:0 auto 5px; /* diminui espaço abaixo */
+}
+
+.intro-site{
+    font-size: 30px;
+}
+form{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+input{
+padding:10px;
+border:none;
+border-radius:8px;
+}
+
+button{
+padding:10px 18px;
+background:gold;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.Menu ul{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+padding:0;
+}
+
+.Menu li{
+list-style:none;
+display:inline-block;
+font-size:1.5rem;
+padding:0 14px;
+border-right:4px solid white;
+}
+
+.Menu li:last-child{
+border-right:none;
+}
+
+
+
+#Conteudo{
+max-width:1200px;
+margin:auto;
+padding:30px 20px;
+}
+
+h2{
+color:white;
+text-align:center;
+font-size:clamp(1.8rem,3vw,3rem);
+margin-bottom:30px;
+}
+
+
+
+#Preferidos,
+#recentemente,
+#top{
+font-size:2rem;
+margin-bottom:30px;
+text-decoration:underline;
+}
+
+#Preferidos{
+color:rgb(255,225,2);
+}
+
+#recentemente{
+color:rgb(132,161,239);
+padding-top:50px;
+}
+
+#top{
+color:rgb(220,10,10);
+padding-top:50px;
+}
+
+
+
+.lista-jogos-pref, .lista-rec{
+display:flex;
+flex-wrap:wrap;
+justify-content:flex-start; 
+gap:25px;
+list-style:none;
+padding-left:40px; 
+}
+
+
+
+.lista-jogos-pref li{
+background:yellow;
+padding:15px;
+border:5px solid rgb(173,173,9);
+border-radius:15px;
+width:280px;
+text-align:center;
+}
+
+.card-favorito img.icone{
+width:20px;
+display:inline;
+margin-right:6px;
+}
+
+.card-favorito p{
+font-size:1.2rem;
+font-weight:600;
+margin:8px 0;
+}
+
+.capa{
+width:170px;
+height:230px;
+object-fit:cover; 
+display:block;
+margin:0 auto 12px;
+border-radius:8px;
+}
+
+
+
+.lista-rec li{
+background:rgb(3,7,132);
+padding:15px;
+border:5px solid rgb(19,21,66);
+border-radius:15px;
+width:280px;
+text-align:center;
+}
+
+.card-normal img.icone{
+width:20px;
+display:inline;
+margin-right:6px;
+}
+
+.card-normal p{
+font-size:1.2rem;
+color:white;
+font-weight:600;
+margin:8px 0;
+}
+
+.Titulo{
+font-weight:bold;
+}
+
+
+.Conquistas{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+list-style:none;
+padding:0;
+margin-bottom:50px;
+}
+
+.Conquistas li{
+background:rgb(247,44,25);
+border:7px solid rgb(173,9,9);
+border-radius:15px;
+padding:15px;
+text-align:center;
+font-size:1.1rem;
+}
+
+.Conquistas .capa{
+margin-bottom:15px;
+max-width:180px;
+}
+
+
+
+.final{
+background:black;
+color:white;
+text-align:center;
+padding:30px;
+font-size:1.1rem;
+line-height:1.8;
+}
+
+
+
+@media (max-width:900px){
+
+.Menu li{
+font-size:1.2rem;
+}
+
+.lista-jogos-pref li,
+.lista-rec li{
+width:240px;
+}
+
+.Conquistas{
+grid-template-columns:1fr;
+}
+
+}
+
+
+
+@media (max-width:600px){
+
+.Cabecalho{
+padding:25px 15px;
+}
+
+.Menu ul{
+flex-direction:column;
+width:100%;
+}
+
+.Menu li{
+border-right:none;
+border-bottom:2px solid white;
+padding:12px 0;
+width:100%;
+}
+
+h2{
+font-size:1.6rem;
+}
+
+#Preferidos,
+#recentemente,
+#top{
+text-align:center;
+font-size:1.6rem;
+}
+
+.lista-jogos-pref,
+.lista-rec{
+flex-direction:column;
+align-items:center;
+}
+
+.lista-jogos-pref li,
+.lista-rec li{
+width:90%;
+}
+
+.Conquistas{
+grid-template-columns:1fr;
+}
+
+.Conquistas li{
+width:90%;
+margin:auto;
+}
+
+.card-favorito p,
+.card-normal p{
+font-size:1rem;
+}
+
+input{
+width:100%;
+}
+
+form{
+flex-direction:column;
+width:100%;
+max-width:300px;
+}
+
+button{
+width:100%;
+}
+
+.final{
+font-size:0.95rem;
+}
+
+}
