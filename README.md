@@ -16,11 +16,13 @@ Breve descrição sobre seu projeto: Estou criando uma biblioteca de jogos em fo
 
 ## Print da versão responsiva com CSS puro [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Desktop](public/imgs/Normal.png)
+![Desktop](public/imgs/Desktop.png)
 
 ## Print da versão responsiva com CSS puro [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Desktop](public/imgs/Mobile.png)
+
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
